@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+
+
+:root {
+   
+    --light-green-color: #c0eb7b;
+    --orange--color: #ff7e00;
+   
+    --text-color: white;
+    --bg-color: #121212;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+    background: #1E1E1E;
+}
+::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    background:#393939;
+    
+}
+
+section {
+    padding: 4.5rem 0 1.5rem;
+}
+
+
+img {
+    width: 100%;
+
+
+}
+
+body {
+    background-color: #efefef;
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; 
+    
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    transition: 0.5s;
+}
+
+
+.header-top {
+   
+    width: 1380px;
+    margin: auto;
+    display: flex;
+    background-color: #393939;
+    justify-content: space-between;
+    padding: 4px 60px;
+}
+.tp {
+    width: 100%;
+    background-color: #393939; 
+   
+ }
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+   
+
+}
+.logo span{
+    color: rgb(208, 17, 17, 0.896);
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.6rem;
+}
+
+
+.logo img {
+    position: absolute;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    width: 80px; /* increased from 100px */
+    height: 80px; /* increased from 100px */
+    object-fit: cover;
+    object-position: center;
+    
+}
+.btom {
+   width: 100%;
+   background-color: #1E1E1E;
+}
+
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1380px; 
+    margin: auto;
+    background-color:#1E1E1E; 
+    padding: 20px 40px;
+}
+
+
+.nav-wrapper {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2.5rem; 
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.8rem 1.1rem;
+}
+.navbar .regi-active{
+    background-color: #E10A0A ;
+    color: var(--bg-color);
+    font-weight: 600;
+    color: var(--text-color);
+}
+.navbar .regi-active:hover {
+    background: rgba(203, 16, 16, 0.896);
+    border-radius: 0rem;
+    
+    color: var(--text-color);
+    transition: background 0.5s;
+}
+
+header ul a:not(.regi-active)::after {
+    content: "";
+    position: absolute;
+    background-color: #E10A0A;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+header ul a:hover:after{
+    
+    width: 100%;
+    
+}
+header ul a:hover{
+    color: white;
+}
+
+.navbar .con-active{
+    background:rgb(210, 208, 208);
+    font-weight: 600;
+    
+    
+}
+.navbar .con-active:hover{
+    background:rgb(156, 156, 156);
+    border-radius: 0rem;
+    color: var(--text-color);
+    transition: background 0.5s;
+}
+
+
+
+.login {
+    font-size: 0.3rem;
+    font-weight: 500;
+    color: var(--text-color);
+    
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    
+    padding: 0.5rem 1rem; 
+    border-radius: 0px; 
+    
+    border-top: none;
+    border-bottom: none;
+    margin-left: auto;
+    
+}
+
+
+.login span{
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+.login .bx {
+font-size: 15px;
+}
+.login   .bxs-user{
+    margin-right: 4px;
+}
+
+
+   .login .dropdown-menu {
+        margin-left: 115px;
+        margin-top: 10px;
+        
+        
+        
+        display:none;
+        position:absolute; 
+        background-color: white; 
+        border: 1px solid #ccc; 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+        
+    }
+    
+    
+    .login .dropdown-menu a {
+        
+        display: block; 
+        padding: 10px; 
+        text-decoration: none; 
+        font-size: 0.8rem;
+        color: black; 
+    }
+    
+    .login .dropdown-menu a:hover {
+        background-color: #f0f0f0; 
+    }
+    
+    #dropdown-toggle:hover{
+        color: var(--light-orange-color);
+    
+    }
+    .container {
+        position: relative;
+        width: 1380px;
+        margin: auto;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        background: url('img/Cycle-Class-ClassPass-scaled.jpeg') no-repeat center center;
+        background-size: cover;
+        
+    }
+    
+    .container .content {
+        border-top: 10px solid #B91634;
+       
+        background-color: #202020;
+        position: absolute;
+        top: 50%;
+       left: -3%;
+        transform: translateY(-28%);
+        
+        color: var(--text-color);
+        padding: 24px;
+        padding-bottom: 30px;
+        height: auto;
+        
+        width: 529px; 
+    }
+
+    .container .content h1{
+        line-height:120%;
+        font-size: 3.9rem;
+        font-weight: 400;
+    }
+    .container .content span{
+        font-size: 1rem;
+    }
+    .container .content p{
+        margin-top: 15px;
+       
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .container .content .button{
+       margin-top: 20px;
+    }
+  .hero-btn{
+        display: inline-block;
+        background-color: #E10A0A;
+        color: var(--text-color);
+        padding: 0.6rem 0.9rem;
+        
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+    .heading-text{
+        text-align: center;
+        
+        width: 1380px;
+        margin: auto;
+        color: var(--bg-color);
+    }
+
+    .heading-text h1{
+
+        font-size: 2.9rem;
+        font-weight: 600;
+        
+        font-weight: 500;
+    }
+    .heading-text p{
+        font-size: 1.1rem;
+       
+
+
+
+    }
+/* Section pupular clases */
+
+    .popularclass {
+        padding-bottom: 100px;
+        
+        color: var(--bg-color);
+        width: 1380px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .popularclass .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .popularclass .heading h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--bg-color);
+    }
+    
+    .classcontainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .classcontainer .clzbox {
+        padding: 20px;
+        position: relative;
+    }
+    
+    .classcontainer .clzbox img:hover {
+        transform: scale(1.02);
+        transition: transform 0.5s ease;
+    }
+    
+    .classcontainer .clzbox img {
+        width: 425px;
+        height: 300px;
+        cursor: pointer;
+    }
+    
+    .popularclass .clzbox h2 {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    
+    .popularclass .clzbox span {
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    .clzbox span{
+      
+        color: var(--text-color);
+        font-weight: 600;
+        font-size: 0.9rem;
+        
+         
+     }
+    .clzbox .arrow{
+        
+         display: flex;
+         flex-direction: row;
+     }
+     .clzbox  .book{
+        width: auto;
+        margin-left: auto;
+     }
+  
+     .clzbox  .book a {
+        display: inline-block;
+        background-color: #E10A0A;
+        color: var(--text-color);
+        padding: 0.4rem 0.7rem;
+        
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+    
+    .clzbox  .book a:hover {
+        background-color: #60011A;
+    }
+    .clzbox .arrow  .book span{
+         color:var(--text-color);
+         
+         font-weight: 600;
+     }
+    
+     .clzbox  .view a {
+        display: inline-block;
+        background-color: #1C1C1C;
+        color: var(--text-color);
+        padding: 0.4rem 0.7rem;
+        
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+    
+    .clzbox  .view a:hover {
+        background-color: #60011A;
+    }
+    .clzbox .arrow  .view span{
+         color:var(--text-color);
+         
+         font-weight: 600;
+     }
+    
+    
+    .popularclass .clzbox i {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    .traning {
+        padding: 70px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 1380px;
+        margin: auto;
+        background-color: #1C1C1C;
+        height: 500px;
+        box-sizing: border-box;
+        gap: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .traning .left,
+    .traning .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .traning .left img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        
+    }
+
+    .traning .right h1{
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    .traning .right p{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .traning .right .button{
+margin-top: 40px;
+
+    }
+
+    .about{
+        margin-top: 50px;
+        width: 1380px;
+        margin: auto;
+        background-color: white;
+        margin-right: auto;
+        display: flex;
+       flex-direction: row;
+        
+        gap: 3rem;
+        color: var(--bg-color);
+       
+       
+        height: 650px;
+        padding: 0;
+    }
+
+
+
+ 
+    .about .text{
+        
+        
+      padding-left: 50px;
+        width: 50%;
+       
+    }
+    
+    .about .mision {
+        font-size: 1rem;
+        
+        margin-left: 20px;
+       
+      }
+    
+      .about .mision span{
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    
+      .about .mision h1{
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+       
+      }
+    
+      .about .vision h1{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .about .vision {
+        font-size: 1rem;
+        margin-left: 20px;
+       
+      }
+      .about .choose{
+        margin-top: 90px;
+        padding-right: 50px;
+       width: 50%;
+       margin-bottom: 50px;
+    
+     
+      }
+      .about .choose p{
+margin-top: 20px;
+      }
+      .about.choose h1{
+        
+        font-size: 1.8rem;
+        margin-bottom: 70px;
+       font-weight: 700;
+       margin-left: 100px;
+    }
+    .about .head{
+        margin-left: 140px;
+        margin-top: 90px;
+    } 
+    .about .head h1{
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    .subscribe{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        height: 220px;
+        background-color: #393939;
+    }
+    .subscribe h1{
+        margin-bottom: 10px;
+        font-size: 2.1rem;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+    .subscribe span{
+font-size: 1.1rem;
+
+    }
+    .subscribe-form {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+       
+      }
+      
+      .subscribe-form input[type="email"] {
+        padding: 10px;
+        font-size: 1rem;
+        flex: 1;
+        width: 400px;
+        outline: none;
+        min-width: 200px;
+      }
+      
+      .subscribe-form button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #E10A0A; /* blue */
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .subscribe-form button:hover {
+        background-color: #ae0505;
+      }
+
+
+
+  
+    /* .trainer{
+        width: 1400px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heading{
+    padding: 20px;
+    }
+    .heading h1{
+        font-size: 2.4rem;
+    }
+    .heading span{
+        font-size: 2.4rem;
+        color: red;
+    }
+    .trainer .row img{
+        max-height: 300px;
+    
+    }
+    .trainer .row{
+       
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        gap: 1.5rem;
+    }
+    .row .box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .trainer .details{
+        padding: 10px;
+    }
+    .trainer .details h1{
+        font-size: 1.3rem;
+    }
+    .trainer .details h2{
+        font-size: 1.1rem;
+    } */
+.foot-bg{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    background-color:#1E1E1E; 
+
+}
+ 
+.footer{
+    max-width: 1380px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 1.5rem;
+   
+    background-color:#1E1E1E; 
+
+    
+    padding: 30px;
+    padding-top: 90px;
+    
+
+
+}
+
+
+.footerbox{
+    display: flex;
+    flex-direction: column;
+}
+.footerbox p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1rem;
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+}
+.social .bx{
+    padding: 10px;
+    background: var(--bg-color);
+    color: rgb(208, 17, 17, 0.896);
+    border-radius: 5rem;
+    font-size: 20px;
+
+}
+.social .bx:hover{
+    background:rgb(208, 17, 17, 0.896) ;
+    color: var(--bg-color);
+    transition: 0.2s all linear;
+}
+.footerbox h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+.footerbox a{
+    color: #999999b0;
+    margin-bottom: 1rem;
+
+}
+.footerbox a:hover{
+    color: red;
+
+}
+
