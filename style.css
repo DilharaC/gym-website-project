@@ -58,7 +58,7 @@ header {
     display: flex;
     flex-direction: column; 
     
-    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+   
     transition: 0.5s;
 }
 
