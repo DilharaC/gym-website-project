@@ -11,7 +11,7 @@ include("connect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
@@ -87,6 +87,8 @@ if (isset($_SESSION['email'])) {
                    
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="product.php">Shop</a></li>
+                    <li><a href="cart.php">Cart</a></li>
+
                     <li><a href="contact.php" >Contact Us</a></li>
                     <li><a href="membershipform.php" class="regi-active">Join Now</a></li>
                 </ul>
@@ -250,7 +252,38 @@ At Fit Zone, you’ll find:
         </div>
     </section>
 
+    <section class="trainer">
+      <div class="heading">
+            <h1>Our Certified<span> Persolnal Trainers</span></h1>
+        </div>
 
+    <div class="row">
+      
+
+        <?php
+       
+        $query = "SELECT * FROM trainers";
+        $result = mysqli_query($conn, $query);
+
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo '<div class="box">';
+                echo '<div class="image">';
+                echo '<img src="img/' . htmlspecialchars($row['image']) . '" alt="Trainer Image">';
+                echo '</div>';
+                echo '<div class="details">';
+                echo '<h1>' . htmlspecialchars($row['name']) . '</h1>';
+                echo '<h2>' . htmlspecialchars($row['experience']) . ' years of experience</h2>';
+                echo '<span>' . htmlspecialchars($row['email']) . '</span>';
+                echo '</div>';
+                echo '</div>';
+            }
+        } else {
+            echo '<p>No trainers available at the moment.</p>';
+        }
+        ?>
+    </div>
+</section>
 
     <section class="subscribe">
     <h1>STAY UP TO DATE WITH US</h1>

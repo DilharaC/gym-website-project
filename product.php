@@ -21,7 +21,7 @@ if (!$productsResult) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
@@ -114,8 +114,8 @@ if (isset($_SESSION['email'])) {
     <section class="hero-section">
 
 <div class="hero-content">
-    <p>Training</p>
-    <h1>Your journey, your way.</h1>
+    <p>Shop</p>
+    <h1>Fuel your fitness. Style your grind.</h1>
 
 
 </div>
@@ -153,7 +153,55 @@ if (isset($_SESSION['email'])) {
     </div>
 </section>
     
+<section class="foot-bg">  
+      <section class="footer" id="footer">
+        <div class="footer-box">
+        <a href="#home" class="logo"><img src="img/ff.png" alt=""></i></a>
+           <br> <p>Kurunagala,50th Street,4th <br>Floor 3, 10022</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
 
+
+
+
+
+            </div>
+
+        </div>
+        <div class="footerbox">
+            <h2>Customer Service</h2>
+            <a href="contact.php">Contact Us</a>
+            <a href="meminquiries.php">membership inquaries</a>
+            <a href="class.php">Classes</a>
+            
+            <a href="training.php">Personal Training</a>
+
+
+           
+        </div>
+        <div class="footerbox">
+            <h2>About</h2>
+            <a href="#about">About US</a>
+            
+            <a href="#">Blogs</a>
+            <a href="#">Return Policy</a>
+        </div>
+        <div class="footerbox">
+            <h2>Membership</h2>
+            <a href="membershipform.php">Join Us</a>
+            
+          
+            <a href="membership.php">membership plans</a>
+            
+        </div>
+        
+       
+  
+    </section>
+    </section>
 
     <script src="script.js"></script>
 
