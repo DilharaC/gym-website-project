@@ -1,0 +1,115 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styles */
+body {
+    background: linear-gradient(to right, #232526, #414345);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Container */
+.membership-form-container {
+    background-color: #2c2f33;
+    padding: 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Heading */
+.membership-form-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #E10A0A;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #E10A0A;
+    outline: none;
+}
+
+/* Total Price Display */
+#total_price {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #E10A0A;
+    margin-top: 6px;
+}
+
+/* Button Style */
+button[type="submit"] {
+    background-color: #E10A0A;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c10909;
+}
+
+/* Payment section heading */
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Navbar */
+.navbar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff3b3b;
+}

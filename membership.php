@@ -88,7 +88,7 @@ if (isset($_SESSION['email'])) {
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="product.php">Shop</a></li>
                     <li><a href="contact.php" >Contact Us</a></li>
-                    <li><a href="buymembership.php" class="regi-active">Join Now</a></li>
+                    <li><a href="membershipform.php" class="regi-active">Join Now</a></li>
                 </ul>
             </div>
 
@@ -243,6 +243,6 @@ if (isset($_SESSION['email'])) {
   
     </section>
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
