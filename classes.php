@@ -151,7 +151,7 @@ motivate you to reach new levels of success!</p>
 
 </p>
 
-            <a href="cardio.php">Explore More<i class='bx bx-chevron-right'></i></a>
+            <a href="yoga.php">Explore More<i class='bx bx-chevron-right'></i></a>
 
     </div>
     
@@ -168,7 +168,7 @@ motivate you to reach new levels of success!</p>
             <h1>Strength</h1>
             <p>Strength training builds muscle, boosts endurance, and increases overall body power through resistance-based exercises.</p>
 
-            <a href="cardio.php">Explore More<i class='bx bx-chevron-right'></i></a>
+            <a href="strength.php">Explore More<i class='bx bx-chevron-right'></i></a>
 
     </div>
 

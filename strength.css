@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+
+
+:root {
+   
+    --light-green-color: #c0eb7b;
+    --orange--color: #ff7e00;
+   
+    --text-color: white;
+    --bg-color: #121212;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+    background: #1E1E1E;
+}
+::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    background:#393939;
+    
+}
+
+section {
+    padding: 4.5rem 0 1.5rem;
+}
+
+
+img {
+    width: 100%;
+
+
+}
+
+body {
+    background-color: #efefef;
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; 
+    
+   
+    transition: 0.5s;
+}
+
+
+.header-top {
+   
+    width: 1380px;
+    margin: auto;
+    display: flex;
+    background-color: #393939;
+    justify-content: space-between;
+    padding: 4px 60px;
+}
+.tp {
+    width: 100%;
+    background-color: #393939; 
+   
+ }
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+   
+
+}
+.logo span{
+    color: rgb(208, 17, 17, 0.896);
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.6rem;
+}
+
+
+.logo img {
+    position: absolute;
+    margin-bottom: 35px;
+    margin-right: 20px;
+    width: 80px; /* increased from 100px */
+    height: 80px; /* increased from 100px */
+    object-fit: cover;
+    object-position: center;
+    
+}
+.btom {
+   width: 100%;
+   background-color: #1E1E1E;
+}
+
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1380px; 
+    margin: auto;
+    background-color:#1E1E1E; 
+    padding: 20px 40px;
+}
+
+
+.nav-wrapper {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2.5rem; 
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.8rem 1.1rem;
+}
+.navbar .regi-active{
+    background-color: #E10A0A ;
+    color: var(--bg-color);
+    font-weight: 600;
+    color: var(--text-color);
+}
+.navbar .regi-active:hover {
+    background: rgba(203, 16, 16, 0.896);
+    border-radius: 0rem;
+    
+    color: var(--text-color);
+    transition: background 0.5s;
+}
+
+header ul a:not(.regi-active)::after {
+    content: "";
+    position: absolute;
+    background-color: #E10A0A;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+header ul a:hover:after{
+    
+    width: 100%;
+    
+}
+header ul a:hover{
+    color: white;
+}
+
+.navbar .con-active{
+    background:rgb(210, 208, 208);
+    font-weight: 600;
+    
+    
+}
+.navbar .con-active:hover{
+    background:rgb(156, 156, 156);
+    border-radius: 0rem;
+    color: var(--text-color);
+    transition: background 0.5s;
+}
+
+
+
+.login {
+    font-size: 0.3rem;
+    font-weight: 500;
+    color: var(--text-color);
+    
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    
+    padding: 0.5rem 1rem; 
+    border-radius: 0px; 
+    
+    border-top: none;
+    border-bottom: none;
+    margin-left: auto;
+    
+}
+
+
+.login span{
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+.login .bx {
+font-size: 15px;
+}
+.login   .bxs-user{
+    margin-right: 4px;
+}
+
+
+   .login .dropdown-menu {
+        margin-left: 115px;
+        margin-top: 10px;
+        
+        
+        
+        display:none;
+        position:absolute; 
+        background-color: white; 
+        border: 1px solid #ccc; 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+        
+    }
+    
+    
+    .login .dropdown-menu a {
+        
+        display: block; 
+        padding: 10px; 
+        text-decoration: none; 
+        font-size: 0.8rem;
+        color: black; 
+    }
+    
+    .login .dropdown-menu a:hover {
+        background-color: #f0f0f0; 
+    }
+    
+    #dropdown-toggle:hover{
+        color: var(--light-orange-color);
+    
+    }
+
+
+.container {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background: url(img/Screenshot+2024-04-11+at+5.31.05+PM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    background-position: center;
+    overflow: hidden;
+    padding: 0;
+}
+.home-text{
+   
+    color: var(--text-color);
+    font-size: 5rem;
+    font-weight: 500; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    
+    
+}
+
+
+.class-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.class-item {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.cardio{
+    width: 1380px;
+   
+   
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.class-conatiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+   
+    
+    
+
+}
+.class-conatiner .clzbox {
+    padding: 20px;
+   
+    position: relative;
+    
+
+}
+.class-conatiner .clzbox img:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+.class-conatiner .clzbox img {
+    width: 425px;
+    height: 300px;
+   cursor: pointer;
+}
+
+.clzbox h2{
+    color: var(--bg-color);
+    font-size: 1.7rem;
+    font-weight: 500;
+    
+}
+
+
+.clzbox  .book{
+    width: auto;
+    margin-left: auto;
+ }
+
+ .clzbox  .book a {
+    display: inline-block;
+    background-color: #E10A0A;
+    color: var(--text-color);
+    padding: 0.4rem 0.7rem;
+    
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.clzbox  .book a:hover {
+    background-color: #60011A;
+}
+.clzbox .arrow  .book span{
+     color:var(--text-color);
+     
+     font-weight: 600;
+ }
+
+.clzbox i{
+   margin-left: 10px;
+   font-size: 25px;
+  
+}
+.clzbox span{
+  
+   color: var(--text-color);
+   font-weight: 600;
+   font-size: 0.9rem;
+    
+}

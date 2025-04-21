@@ -138,7 +138,7 @@ if (isset($_SESSION['email'])) {
             <div class="arrow">
                
                 <div class="book">
-            <a href="trax.php"><span>Book Classes</span></a>
+            <a href="traxbook.php"><span>Book Classes</span></a>
             </div>
             </div>
         </div>
@@ -168,7 +168,7 @@ if (isset($_SESSION['email'])) {
             <div class="arrow">
                
                 <div class="book">
-            <a href="spin.php"><span>Book Classes</span></a>
+            <a href="spinbook.php"><span>Book Classes</span></a>
             </div>
             </div>
         </div>
