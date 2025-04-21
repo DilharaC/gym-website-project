@@ -133,7 +133,7 @@ if (isset($_SESSION['email'])) {
                 <li><strong><br>App Access</strong></li>
                 <span>Book slots and track progress using the mobile app</span>
 
-                <br><br><a href="buymembership.php" class="btn">JOIN TODAY</a>
+                <br><br><a href="membershipform.php" class="btn">JOIN TODAY</a>
             </div>
         </div>
 
@@ -155,7 +155,7 @@ if (isset($_SESSION['email'])) {
                 <li><strong><br>Nutrition Planning Tools</strong></li>
                 <span>Custom diet plans and grocery guides via app</span>
 
-                <br><br><a href="buymembership.php" class="btn">JOIN TODAY</a>
+                <br><br><a href="membershipform.php" class="btn">JOIN TODAY</a>
             </div>
         </div>
 
@@ -181,7 +181,7 @@ if (isset($_SESSION['email'])) {
                     <li><strong><br>Exclusive Member Discounts</strong></li>
                     <span>Get up to 25% off at partner stores and cafes</span>
                 </ul>
-                <br><br><a href="buymembership.php" class="btn">JOIN TODAY</a>
+                <br><br><a href="membershipform.php" class="btn">JOIN TODAY</a>
             </div>
         </div>
     </div>
@@ -190,7 +190,7 @@ if (isset($_SESSION['email'])) {
    
         <h1>JOIN THE BEST. TRAIN WITH THE BEST. INQUIRE NOW.</h1>
         
-        <a href="contact.php" class="btn">INQUIRE NOW</a>
+        <a href="inquiery.php" class="btn">INQUIRE NOW</a>
     
     </div>
     </section>
@@ -232,7 +232,7 @@ if (isset($_SESSION['email'])) {
         </div>
         <div class="footerbox">
             <h2>Membership</h2>
-            <a href="join.php">Join Us</a>
+            <a href="membershipform.php">Join Us</a>
             
           
             <a href="membership.php">membership plans</a>
