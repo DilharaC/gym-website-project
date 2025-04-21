@@ -33,14 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
   
-    function checkEmail() {
-      const email = document.getElementById("emailInput").value;
-      if (email === "admin321@gmail.com") {
-          window.location.href = "Userprofile.php"
-      } else {
-          alert("Thank you for subscribing!");
-      }
-  }
-  
+
   
   

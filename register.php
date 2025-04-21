@@ -36,24 +36,24 @@ if (isset($_POST['signIn'])) {
     $password = $_POST['password'];
 
    
-    // $sql_staff = "SELECT * FROM staff WHERE email=?";
-    // $stmt = $conn->prepare($sql_staff);
-    // $stmt->bind_param("s", $email);
-    // $stmt->execute();
-    // $result_staff = $stmt->get_result();
+    $sql_staff = "SELECT * FROM staff WHERE email=?";
+    $stmt = $conn->prepare($sql_staff);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result_staff = $stmt->get_result();
 
-    // if ($result_staff->num_rows > 0) {
-    //     $row = $result_staff->fetch_assoc();
+    if ($result_staff->num_rows > 0) {
+        $row = $result_staff->fetch_assoc();
        
-    //     if ($row['password'] === md5($password)) { 
-    //         session_start();
-    //         $_SESSION['email'] = $row['email'];
-    //         header("Location: staffprofile.php");
-    //         exit();
-    //     } else {
-    //         echo "<script>alert('Incorrect Email or Password'); window.location.href='login.php';</script>";
-    //     }
-    // }
+        if ($row['password'] === md5($password)) { 
+            session_start();
+            $_SESSION['email'] = $row['email'];
+            header("Location: staffprofile.php");
+            exit();
+        } else {
+            echo "<script>alert('Incorrect Email or Password'); window.location.href='login.php';</script>";
+        }
+    }
 
 
    

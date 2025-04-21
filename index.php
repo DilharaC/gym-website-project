@@ -122,18 +122,18 @@ if (isset($_SESSION['email'])) {
     </div>
     <div class="classcontainer">
         <div class="clzbox">
-            <a href="classpoweryoga.php"><img src="img/power yoga.jpeg" alt=""></a>
+            <a href="poweryogabook.php"><img src="img/power yoga.jpeg" alt=""></a>
             
             <h2>Power Yoga</h2>
             <div class="arrow">
                
                 <div class="book">
-            <a href="classpoweryoga.php"><span>Book Classes</span></a>
+            <a href="poweryogabook.php"><span>Book Classes</span></a>
             </div>
             </div>
         </div>
         <div class="clzbox">
-            <a href="trax.php"><img src="img/trax1.jpg" alt=""></a>
+            <a href="traxbook.php"><img src="img/trax1.jpg" alt=""></a>
             <h2>TraX</h2>
             <div class="arrow">
                
@@ -143,27 +143,27 @@ if (isset($_SESSION['email'])) {
             </div>
         </div>
         <div class="clzbox">
-            <a href="glutegain.php"><img src="img/glutegains.jpeg" alt=""></a>
+            <a href="glutegainbook.php"><img src="img/glutegains.jpeg" alt=""></a>
             <h2>Glute Gains</h2>
             <div class="arrow">
                
                 <div class="book">
-            <a href="glutegain.php"><span>Book Classes</span></a>
+            <a href="glutegainbook.php"><span>Book Classes</span></a>
             </div>
             </div>
         </div>
         <div class="clzbox">
-            <a href="pilates.php"><img src="img/pilates.jpeg" alt=""></a>
+            <a href="pilatesbook.php"><img src="img/pilates.jpeg" alt=""></a>
             <h2>Pilates</h2>
             <div class="arrow">
                 
                 <div class="book">
-            <a href="pilates.php"><span>Book Classes</span></a>
+            <a href="pilatesbook.php"><span>Book Classes</span></a>
             </div>
             </div>
         </div>
         <div class="clzbox">
-            <a href="spin.php"><img src="img/spin1.jpeg" alt=""></a>
+            <a href="spinbook.php"><img src="img/spin1.jpeg" alt=""></a>
             <h2>Spin</h2>
             <div class="arrow">
                
@@ -173,12 +173,12 @@ if (isset($_SESSION['email'])) {
             </div>
         </div>
         <div class="clzbox">
-            <a href="hiit.php"><img src="img/hiit.jpeg" alt=""></a>
+            <a href="hiitbook.php"><img src="img/hiit.jpeg" alt=""></a>
             <h2>HIIT</h2>
             <div class="arrow">
                
                 <div class="book">
-            <a href="hiit.php"><span>Book Classe</span></a>
+            <a href="hiitbook.php"><span>Book Classe</span></a>
             </div>
             </div>
         </div>
@@ -252,15 +252,38 @@ At Fit Zone, you’ll find:
 
 
 
-<section class="subscribe">
-<h1>STAY UP TO DATE WITH US</h1>
-<p>Join our mailing list for updates on events, offers, news, and more from us and
-    our partners—delivered straight to your inbox.</p>
-<form class="subscribe-form">
-    <input type="email" placeholder="Enter your email" required>
-    <button type="submit">Subscribe</button>
-  </form>
-    </section>
+    <section class="subscribe">
+    <h1>STAY UP TO DATE WITH US</h1>
+    <p>
+      Join our mailing list for updates on events, offers, news, and more from us and
+      our partners—delivered straight to your inbox.
+    </p>
+    <form class="subscribe-form" id="subscribeForm">
+      <input id="emailInput" type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- JavaScript BELOW the HTML -->
+  <script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("subscribeForm");
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Stop form from refreshing the page
+
+        const email = document.getElementById("emailInput").value;
+
+        if (email === "admin321@gmail.com") {
+          window.location.href = "admin.php";
+        } else {
+          alert("Thank you for subscribing!");
+        }
+      });
+    });
+  </script>
+
 
     
       <section class="foot-bg">  
