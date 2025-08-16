@@ -11,7 +11,7 @@ include("connect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memberships</title>
-    <link rel="stylesheet" href="memberships.css">
+    <link rel="stylesheet" href="membershipsss.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
@@ -22,7 +22,12 @@ include("connect.php");
 
 
 
+        <div class="cart">
+    <a href="cart.php"><i class='bx bx-cart-alt' style='color:#ffffff'  ></i>
+    <span >Cart</span></a>
 
+       
+</div>
 
        
 
@@ -87,9 +92,8 @@ if (isset($_SESSION['email'])) {
                    
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="product.php">Shop</a></li>
-                    <li><a href="cart.php">Cart</a></li>
-
-                    <li><a href="contact.php" >Contact Us</a></li>
+                    
+                    <li><a href="training.php#contact" >Contact Us</a></li>
                     <li><a href="membershipform.php" class="regi-active">Join Now</a></li>
                 </ul>
             </div>

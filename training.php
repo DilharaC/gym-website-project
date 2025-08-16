@@ -9,7 +9,7 @@ include("connect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="training.css">
+    <link rel="stylesheet" href="trainingss.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
@@ -18,7 +18,12 @@ include("connect.php");
         <div class="header-top">
 
 
+        <div class="cart">
+    <a href="cart.php"><i class='bx bx-cart-alt' style='color:#ffffff'  ></i>
+    <span >Cart</span></a>
 
+       
+</div>
 
 
 
@@ -85,9 +90,9 @@ if (isset($_SESSION['email'])) {
                    
                     <li><a href="blog.php">Blog</a></li>
                     <li><a href="product.php">Shop</a></li>
-                    <li><a href="cart.php">Cart</a></li>
+                   
 
-                    <li><a href="contact.php" >Contact Us</a></li>
+                    <li><a href="#contact" >Contact Us</a></li>
                     <li><a href="membershipform.php" class="regi-active">Join Now</a></li>
                 </ul>
             </div>
@@ -198,9 +203,53 @@ With specialized certifications, our trainers are ready to motivate anyone—fro
     </div>
     
         </div>
-       
-
     </section>
+
+        <section class="contact" id="contact">
+    <div class="container1">
+        <form method="post" action="contactdb.php">
+            <div class="fullbox">
+                <div class="topic">
+                    <h1>CONTACT FITZONE</h1>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="fName">FIRST NAME</label>
+                        <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lName">LAST NAME</label>
+                        <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="age">AGE</label>
+                        <input type="number" name="age" id="age" placeholder="Age" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="cNumber">CONTACT NUMBER</label>
+                        <input type="text" name="cNumber" id="cNumber" placeholder="Contact Number" required>
+                    </div>
+                </div>
+
+                <br>
+                <div class="input-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                </div>
+
+                <br>
+                <button type="submit" class="btn" name="contact">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
     <section class="foot-bg">  
       <section class="footer" id="footer">
         <div class="footer-box">
